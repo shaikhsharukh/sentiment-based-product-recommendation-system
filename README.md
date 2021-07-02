@@ -1,6 +1,11 @@
 # sentiment-based-product-recommendation-system
 Using Machine learning for text classification and building a user collaborative recommendation system
 
+App is live on https://sharukhshaikh.herokuapp.com/ you can use username from user_final_rating.pkl for test the application. You can use "00sab00" as test user also.
+
+
+# The problem statement is as below
+
 The e-commerce business is quite popular today. Here, you do not need to take orders by going to each customer. A company launches its website to sell the items to the end consumer, and customers can order the products that they require from the same website. Famous examples of such e-commerce companies are Amazon, Flipkart, Myntra, Paytm and Snapdeal.
 
  
