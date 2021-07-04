@@ -20,6 +20,22 @@ def home():
         data=recommend.getTopProducts(user)
     return render_template('index.html', data=data, flag=flag)
 
+@app.route('/userList', methods = ['GET'])
+def userList():
+    data=recommend.getUsers()
+    return data
+
+@app.route('/productList', methods = ['GET'])
+def productList():
+    user=request.args.get("userid")
+    data=recommend.getTopProductsNew(user)
+    return data
+
+@app.route('/analysText', methods = ['GET'])
+def analysText():
+    text=request.args.get("text")
+    data=recommend.analyiseSentiment(text)
+    return data
 
 if __name__ == '__main__' :
     app.run(debug=True )  # this command will enable the run of your flask app or api
