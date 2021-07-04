@@ -18,6 +18,7 @@ import nltk
 class Recommendation:
     
     def __init__(self):
+        nltk.data.path.append('./nltk_data/')
         nltk.download('stopwords')
         nltk.download('punkt')
         nltk.download('averaged_perceptron_tagger')
